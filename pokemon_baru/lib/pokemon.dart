@@ -40,7 +40,6 @@ Pokemon pokemonFromJson(String str) => Pokemon.fromJson(json.decode(str));
 class Pokemon {
   int id;
   String name;
-  Species species;
   Sprites sprites;
   List<Stat> stats;
   List<Type> types;
@@ -57,7 +56,6 @@ class Pokemon {
     @required this.weight, 
     @required this.base_experience,
     @required this.height,
-    this.species,
     this.sprites,
     this.stats,
     this.types,
@@ -78,7 +76,6 @@ class Pokemon {
     forms: List<Species>.from(
       json["forms"].map((x) => Species.fromJson(x)),
     ),
-    species: Species.fromJson(json["species"]),
     sprites: Sprites.fromJson(json["sprites"]),
     abilities: List<Ability>.from(
       json["abilities"].map((x) => Ability.fromJson(x)),
