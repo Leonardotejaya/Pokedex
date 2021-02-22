@@ -62,7 +62,7 @@ class DetailPage extends StatelessWidget {
             ),
           ),
 
-          SizedBox(height: 10,),
+          SizedBox(height: 15,),
           Expanded(
             flex: -1,
             child: Container(
@@ -75,7 +75,7 @@ class DetailPage extends StatelessWidget {
 
                       padding: EdgeInsets.all(8),
                       margin: EdgeInsets.symmetric(horizontal: 120,vertical: 8),
-                      child: Text(pokemon.types[index].type.name,style: TextStyle(color: Colors.white,fontSize: 20,     letterSpacing: 5),),
+                      child: Text(pokemon.types[index].type.name,style: TextStyle(color: Colors.white,fontSize: 25,     letterSpacing: 12),),
                       decoration: BoxDecoration(
                           color: Colors.redAccent,
                           borderRadius: BorderRadius.circular(30)),
