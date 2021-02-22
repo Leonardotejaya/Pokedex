@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'pokemon.dart';
-import 'pokemon_card.dart';
+import 'main.dart';
 
 class MyHomePage extends StatefulWidget {
   static const String url =  'https://pokeapi.co/api/v2/pokemon?limit=151&offset=0';

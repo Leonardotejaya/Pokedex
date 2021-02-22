@@ -24,18 +24,6 @@ class DetailPage extends StatelessWidget {
             Navigator.pop(context,true);
           },
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: pokemon == null ?  Center(child: Text('NaN'),) : Center(child: Text('#0${pokemon.id.toString()}',
-              style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 25,
-                  color: Colors.white
-              ),
-            )),
-          )
-        ],
 
       ),
       body: Column(
