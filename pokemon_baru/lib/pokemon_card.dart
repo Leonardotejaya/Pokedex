@@ -23,25 +23,15 @@ class _PokeCardState extends State<PokeCard> {
     final decode = json.decode(response.body);
     final data = Pokemon.fromJson(decode);
 
-
-
-
     setState(() {
       pokemon = data;
-
     });
-
-
   }
-
-
-
 
   void initState(){
     _fetchData();
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +66,6 @@ class _PokeCardState extends State<PokeCard> {
                   )
                 ],
               ),
-
             )
           ),
       );

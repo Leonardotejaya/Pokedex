@@ -107,9 +107,6 @@ class Ability {
   };
 }
 
-
-
-
 class Species {
   String name;
   String url;
@@ -129,8 +126,6 @@ class Species {
     "url": url,
   };
 }
-
-
 
 class Sprites {
   String backDefault;

@@ -14,7 +14,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Pokemons pokemons;
 
-
   Color bgColor = Color(0xFF393636);
   Future<List<Pokemons>> _fetchData() async{
    final response = await http.get(MyHomePage.url);
@@ -32,7 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
     _fetchData();
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -59,10 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   )),
             ),
           ),
-
-
       );
-
   }
 }
 

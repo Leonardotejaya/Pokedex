@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pokemon.dart';
 
-
 ///THIS CONTAIN DETAIL OF EVERY POKEMON
 // ignore: must_be_immutable
 class DetailPage extends StatelessWidget {
